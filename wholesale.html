@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wholesale | Folle Perfumes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body data-page="wholesale">
+
+<div id="sharedHeader"></div>
+
+<main>
+
+    <section class="page-hero">
+
+        <img
+            src="images/wholesale-hero.jpg"
+            alt="Folle perfume wholesale"
+            class="page-hero-image"
+        >
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="container page-hero-copy reveal">
+
+            <span class="eyebrow">
+                BUSINESS WITH FOLLE
+            </span>
+
+            <h1>
+                Wholesale
+                <em>inquiries.</em>
+            </h1>
+
+            <p>
+                Interested in Folle products for retail,
+                corporate gifting or bulk purchasing?
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="section">
+
+        <div class="container wholesale-grid">
+
+            <div class="wholesale-copy reveal">
+
+                <span class="eyebrow">
+                    PARTNER WITH FOLLE
+                </span>
+
+                <h2>
+                    Bring Folle
+                    <em>to your customers.</em>
+                </h2>
+
+                <p>
+                    Use this form to prepare a wholesale inquiry.
+                    The validated information will open directly
+                    in WhatsApp.
+                </p>
+
+
+                <div class="wholesale-benefits">
+
+                    <article>
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <span>Bulk order inquiries</span>
+                    </article>
+
+                    <article>
+                        <i class="fa-solid fa-store"></i>
+                        <span>Retail opportunities</span>
+                    </article>
+
+                    <article>
+                        <i class="fa-solid fa-gift"></i>
+                        <span>Corporate gifting inquiries</span>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <form id="wholesaleForm" class="premium-form reveal" novalidate>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="businessName">Business Name *</label>
+                        <input id="businessName" type="text">
+                        <small class="error" id="businessNameError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="wholesaleName">Contact Person *</label>
+                        <input id="wholesaleName" type="text">
+                        <small class="error" id="wholesaleNameError"></small>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="wholesalePhone">Phone *</label>
+                        <input id="wholesalePhone" type="tel">
+                        <small class="error" id="wholesalePhoneError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="wholesaleCity">City *</label>
+                        <input id="wholesaleCity" type="text">
+                        <small class="error" id="wholesaleCityError"></small>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="businessType">
+                        Inquiry Type
+                    </label>
+
+                    <select id="businessType">
+                        <option>Retail Store</option>
+                        <option>Online Store</option>
+                        <option>Corporate Gifts</option>
+                        <option>Bulk Purchase</option>
+                        <option>Other</option>
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="wholesaleMessage">
+                        Requirements *
+                    </label>
+
+                    <textarea
+                        id="wholesaleMessage"
+                        rows="6"
+                        placeholder="Tell Folle about your estimated quantity and requirements..."
+                    ></textarea>
+
+                    <small class="error" id="wholesaleMessageError"></small>
+
+                </div>
+
+
+                <button type="submit" class="btn btn-gold form-button">
+
+                    Send Wholesale Inquiry
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<div id="sharedFooter"></div>
+<div id="sharedOverlays"></div>
+
+</body>
+</html>

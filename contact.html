@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Folle Perfumes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body data-page="contact">
+
+<div id="sharedHeader"></div>
+
+<main>
+
+    <section class="page-hero">
+
+        <img
+            src="images/contact-hero.jpg"
+            alt="Contact Folle Perfumes"
+            class="page-hero-image"
+        >
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="container page-hero-copy reveal">
+
+            <span class="eyebrow">
+                CONTACT FOLLE
+            </span>
+
+            <h1>
+                Let's find your
+                <em>next fragrance.</em>
+            </h1>
+
+            <p>
+                Contact Folle for product inquiries,
+                fragrance recommendations and order support.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="section">
+
+        <div class="container contact-grid">
+
+            <div class="contact-details reveal">
+
+                <span class="eyebrow">
+                    GET IN TOUCH
+                </span>
+
+                <h2>
+                    Talk to
+                    <em>Folle.</em>
+                </h2>
+
+
+                <a href="tel:+923363684408" class="contact-box">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+                        <small>PHONE / WHATSAPP</small>
+                        <strong>+92 336 3684408</strong>
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="mailto:buyfolle.care@gmail.com"
+                    class="contact-box"
+                >
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <div>
+                        <small>EMAIL</small>
+                        <strong>buyfolle.care@gmail.com</strong>
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Plot+385+Block+II+Street+21+Bahadurabad+Karachi"
+                    target="_blank"
+                    class="contact-box"
+                >
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+
+                        <small>LOCATION</small>
+
+                        <strong>
+                            Plot #385, Block II, Street #21,
+                            Flat G1, near Alamgir Diagnostics,
+                            Bahadurabad, Karachi
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+                <div class="contact-social-row">
+
+                    <a
+                        href="https://instagram.com/buy.folle"
+                        target="_blank"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </a>
+
+                    <a
+                        href="https://fb.com/buyfolle"
+                        target="_blank"
+                    >
+                        <i class="fa-brands fa-facebook-f"></i>
+                        Facebook
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <form id="contactForm" class="premium-form reveal" novalidate>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name *
+                        </label>
+
+                        <input id="name" type="text">
+
+                        <small class="error" id="nameError"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Mobile Number *
+                        </label>
+
+                        <input
+                            id="phone"
+                            type="tel"
+                            placeholder="03XXXXXXXXX"
+                        >
+
+                        <small class="error" id="phoneError"></small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email *
+                    </label>
+
+                    <input id="email" type="email">
+
+                    <small class="error" id="emailError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="interest">
+                        Inquiry
+                    </label>
+
+                    <select id="interest">
+
+                        <option>General Inquiry</option>
+                        <option>Men's Fragrance</option>
+                        <option>Women's Fragrance</option>
+                        <option>Top Sellers / Bundle</option>
+                        <option>Order Support</option>
+                        <option>Wholesale</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message *
+                    </label>
+
+                    <textarea
+                        id="message"
+                        maxlength="500"
+                        rows="6"
+                    ></textarea>
+
+                    <div class="message-meta">
+
+                        <small class="error" id="messageError"></small>
+
+                        <span>
+                            <span id="messageCount">0</span>/500
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <label class="checkbox-row">
+
+                    <input id="consent" type="checkbox">
+
+                    <span>
+                        I confirm the information entered is correct.
+                    </span>
+
+                </label>
+
+                <small class="error" id="consentError"></small>
+
+
+                <button class="btn btn-gold form-button" type="submit">
+
+                    Send via WhatsApp
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="map-section">
+
+        <iframe
+            title="Folle Perfumes Bahadurabad Karachi"
+            src="https://www.google.com/maps?q=Bahadurabad%20Karachi%20Pakistan&output=embed"
+            loading="lazy"
+            allowfullscreen
+        ></iframe>
+
+    </section>
+
+</main>
+
+<div id="sharedFooter"></div>
+<div id="sharedOverlays"></div>
+
+</body>
+</html>

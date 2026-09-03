@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Women's Perfumes | Folle</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body data-page="women">
+
+<div id="sharedHeader"></div>
+
+<main>
+
+    <section class="page-hero">
+
+        <img
+            src="images/women-hero.jpg"
+            alt="Folle women's fragrances"
+            class="page-hero-image"
+        >
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="container page-hero-copy reveal">
+
+            <span class="eyebrow">
+                THE WOMEN'S EDIT
+            </span>
+
+            <h1>
+                Elegance with
+                <em>presence.</em>
+            </h1>
+
+            <p>
+                Discover floral, fruity and expressive fragrances
+                from Folle's women's collection.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="filter-toolbar reveal">
+
+                <div class="filter-chips">
+
+                    <button class="filter-chip active" data-filter="all">
+                        All Women
+                    </button>
+
+                    <button class="filter-chip" data-filter="floral">
+                        Floral
+                    </button>
+
+                    <button class="filter-chip" data-filter="fresh">
+                        Fresh
+                    </button>
+
+                    <button class="filter-chip" data-filter="oriental">
+                        Warm
+                    </button>
+
+                    <button class="filter-chip" data-filter="top">
+                        Top Sellers
+                    </button>
+
+                </div>
+
+
+                <input
+                    id="productSearch"
+                    class="product-search"
+                    type="search"
+                    placeholder="Search women's fragrances..."
+                >
+
+            </div>
+
+
+            <div class="catalogue-meta">
+
+                <span>
+                    Showing
+                    <strong id="visibleCount">0</strong>
+                    fragrances
+                </span>
+
+                <button id="resetFilters" class="reset-button">
+                    Reset
+                </button>
+
+            </div>
+
+
+            <div
+                id="productGrid"
+                class="product-grid"
+                data-product-collection="women"
+            ></div>
+
+
+            <div id="emptyState" class="empty-state">
+
+                <h3>No women's fragrances found.</h3>
+
+                <button id="emptyReset" class="btn btn-dark">
+                    Reset
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<div id="sharedFooter"></div>
+<div id="sharedOverlays"></div>
+
+</body>
+</html>
